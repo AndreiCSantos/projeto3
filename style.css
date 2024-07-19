@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body
+{
+    background-color: #eee;
+}
+
+.header
+{
+    max-width: 414px;
+    width: 100%;
+    height: 92px;
+    background-color: #cf2b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    z-index: 1;
+}
+
+.header .logo
+{
+    font-family: 'Righteous';
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+    margin-left: 21px;
+    margin-bottom: 4px;
+}
+
+.header .sub-logo
+{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-left: 21px;
+}
+
+.container .content-pedidos
+{
+    padding: 31px 0px 16px 19px;
+}
+
+.container .container-pedidos .selecionado
+{
+    border: solid 4px #32b72f;
+}
+
+.container .content-pedidos h2
+{
+    font-family: 'Righteous';
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 17px;
+}
+
+.container .content-pedidos .container-pedidos
+{
+    display: flex;  
+    overflow: scroll;
+}
+
+.container .content-pedidos .container-pedidos::-webkit-scrollbar
+{
+    display: none;
+}
+
+.container .content-pedidos .pratos
+{
+    width: 172px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 9px;
+    margin-right: 16px;
+    
+}
+
+.container .content-pedidos .pratos img
+{
+    width: 144px;
+    height: 87px;
+    margin: 14px;
+    border-radius: 4px;
+}
+
+.container .content-pedidos .pratos h3
+{
+    margin: 0px 0px 10px 14px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+}
+
+.container .content-pedidos .pratos h4
+{
+    margin: 0px 0px 10px 14px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    color: #a6a6a6;
+}
+
+.container .content-pedidos .pratos p
+{
+    margin: 0px 0px 10px 14px;
+    font-family: 'Roboto';
+
+}
+
+.botao-pedido
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 414px;
+    height: 92px;
+    background-color: white;
+}
+
+.botao-pedido .fechar-pedido
+{
+    background-color: #32b72f;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: auto;
+}
+
+.confirme-pedido
+{
+    position: fixed;
+    top: 0;
+    background-color: rgba(238, 238, 238, .7);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirme-pedido .conteudo
+{
+    width: 377px;
+    height: 353px;
+    background-color: #50d074;
+    border-radius: 9px;
+}
+
+.confirme-pedido .conteudo .superior
+{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.confirme-pedido .conteudo .meio
+{
+    margin: 25px;
+}
+
+.confirme-pedido .conteudo .meio .escolha-cliente
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+.confirme-pedido .conteudo .meio .escolha-cliente p
+{
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.confirme-pedido .conteudo .meio .escolha-cliente:last-child p
+{
+    font-weight: 700;
+}
+
+.confirme-pedido .conteudo .botoes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirme-pedido .conteudo .botoes .confirme
+{
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    color: #50d074;
+    border: none;
+}
+
+.confirme-pedido .conteudo .botoes .cancelar
+{
+    border: none;
+    background-color: #50d074;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 13px;
+}
+
+.escondido
+{
+    display: none;
+}
+
+

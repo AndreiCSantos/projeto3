@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="logo">DrivenEats</h1>
+        <p class="sub-logo">Sua comida em 6 munutos</p>
+    </header>
+
+    <div class="container">
+        <div class="content-pedidos" id="pratos">
+            <h2>Primeiro, seu prato</h2>
+            <div class="container-pedidos">
+                <div class="pratos" onclick="selecionarPrato(this)">
+                    <img src="imagens/rei da granja.jpg" alt="">
+                    <h3>Frango Yin Yang</h3>
+                    <h4>Um pouco de batata, um pouco de salada</h4>
+                    <p>R$ <span>14,90</span></p>
+                </div>
+                <div class="pratos" onclick="selecionarPrato(this)">
+                    <img src="imagens/boi bem feito.jpg" alt="">
+                    <h3>Boi Celestial</h3>
+                    <h4>Um pouco de batata, um pouco de salada</h4>
+                    <p>R$ <span>17,90</span></p>
+                </div>
+                <div class="pratos" onclick="selecionarPrato(this)">
+                    <img src="imagens/calabresa de primeira.png" alt="">
+                    <h3>Calabresa Espiritual</h3>
+                    <h4>Um pouco de batata, um pouco de salada</h4>
+                    <p>R$ <span>12,90</span></p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="content-pedidos">
+            <h2>Agora, sua bebida</h2>
+            <div class="container-pedidos" id="bebidas">
+                <div class="pratos" onclick="selecionarBebida(this)">
+                    <img src="imagens/suco.png" alt="">
+                    <h3>Suco natural</h3>
+                    <h4>Copo 300ml</h4>
+                    <p>R$ <span>2,99</span></p>
+                </div>
+                <div class="pratos" onclick="selecionarBebida(this)">
+                    <img src="imagens/coca.png" alt="">
+                    <h3>Coca</h3>
+                    <h4>Lata 350ml</h4>
+                    <p>R$ <span>1,99</span></p>
+                </div>
+                <div class="pratos" onclick="selecionarBebida(this)">
+                    <img src="imagens/fanta.png" alt="">
+                    <h3>Fanta</h3>
+                    <h4>Lata 350ml</h4>
+                    <p>R$ <span>1,99</span></p>
+                </div>
+            </div> 
+        </div>
+        <div class="content-pedidos">
+            <h2>Por fim, sua sobremesa</h2>
+            <div class="container-pedidos" id="sobremesas">
+                <div class="pratos" onclick="selecionarSobremesa(this)">
+                    <img src="imagens/mouse.jpg" alt="">
+                    <h3>Mouse maracujá</h3>
+                    <h4>Apenas mouse</h4>
+                    <p>R$ <span>1,99</span></p>
+                </div>
+                <div class="pratos" onclick="selecionarSobremesa(this)">
+                    <img src="imagens/pudim.jpg" alt="">
+                    <h3>Pudim</h3>
+                    <h4>Apenas Pudim</h4>
+                    <p>R$ <span>1,99</span></p>
+                </div>
+                <div class="pratos" onclick="selecionarSobremesa(this)">
+                    <img src="imagens/brownie.jpg" alt="">
+                    <h3>Brownie</h3>
+                    <h4>Apenas Brownie</h4>
+                    <p>R$ <span>1,99</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="botao-pedido">
+        <button class="fechar-pedido" onclick="fecharPedido()">Fechar pedido</button>
+    </div>
+
+    <div class="confirme-pedido escondido">
+        <div class="conteudo">
+            <div class="superior">
+                <h2>Confirme seu pedido</h2>
+            </div>
+            <div class="meio">
+                <div class="escolha-cliente">
+                    <p class="pedido-prato"></p>
+                    <p class="valor-prato"></p>
+                </div>
+                <div class="escolha-cliente">
+                    <p class="pedido-bebida"></p>
+                    <p class="valor-bebida"></p>
+                </div>
+                <div class="escolha-cliente">
+                    <p class="pedido-sobremesa"></p>
+                    <p class="valor-sobremesa"></p>
+                </div>
+                <div class="escolha-cliente">
+                    <p>TOTAL</p>
+                    <p class="valor-total"></p>
+                </div>
+            </div>
+            <div class="botoes">
+                <button class="confirme" onclick="confirmarPedido()">Tudo certo, pode pedir!</button>
+                <button class="cancelar" onclick="voltar()">cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
